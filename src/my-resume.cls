@@ -595,6 +595,33 @@
 \pagestyle{headerhighlightmain}
 \RequirePackage{hyperref}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\ifdefined\BW
+  \colorlet{accent}{white!10!black}
+\else
+  \colorlet{accent}{awesome-red}
+\fi
+
+\newcommand{\languageSwitch}[2]{
+    \ifdefined\EN % English text in first position
+        #1
+    \else  % Spanish text in second position
+        #2
+    \fi
+}
+
+
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  THE END
