@@ -51,7 +51,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{fontawesome}
 \RequirePackage{academicons}
-
+\usepackage{moresize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FILTER IRRELEVANT WARNINGS
