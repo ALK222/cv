@@ -1,4 +1,5 @@
-\documentclass[singlesided,
+\documentclass[%singlesided,
+               doublesided,
                paper=a4,
                fontsize=10pt
               ]{my-resume}
@@ -24,9 +25,18 @@
 \setmainfont{Carlito}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
 
-
+% \colorlet{headerfontcolor}{white}
+% \colorlet{accent}{awesome-red}
+% \colorlet{heading}{black}
+% \colorlet{emphasis}{black}
+% \colorlet{body}{black}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,9 +45,8 @@
 \begin{document}
 
 \name{Alejandro Barrachina Argudo}
-\tagline{\languageSwitch{Programmer in constant training with knowledge in Java, C++, Ruby and Python among \\ others aplied to AI, data analysis and Database management. \\ In constant training to improve my skills and knowledge in any field.}{Programador en formación con conocimientos en Java, C++, Ruby y Python entre otros, \\
-        aplicados a IA, análisis de datos y gestiones de bases de datos.\\
-        En constante aprendizaje para mejorar mis habilidades y aumentar mis conocimientos \\ en cualquier campo.}}
+\tagline{\languageSwitch{Developer in constant training with knowledge in Java, C++ and Python among others aplied to AI, data analysis and VR/Game development. 
+ In constant training to improve my skills and knowledge in any field.}{Programador en formación con conocimientos en Java, C++ y Python entre otros, aplicados a IA, análisis de datos y desarrollo de videojuegos/VR. En constante aprendizaje para mejorar mis habilidades y aumentar mis conocimientos en cualquier campo.}}
 
 \photo[round]{photo.png}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
 
@@ -61,61 +70,45 @@
     \skill{C++}{4}
     \skill{Java}{4}
     \skill{Python}{4}
-    \skill{Haskell}{3}
+    \skill{C\#}{3}
     \skill{MariaDB / SQL}{4}
     \skill{MongoDB}{3}
-    \skill{Ruby}{2}
     \skill{LaTeX}{4}
 
     \skillsection{\languageSwitch{Operative Systems}{Sistemas operativos}}
     \skill{Linux}{4}
     \skill{Windows}{4}
 
-    % \vspace{0.5em}
-    % \skillsection{\languageSwitch{Software \& Tools}{Software y Herramientas}}
-    % \textit{\textbf{IDEs y Editores}}\\
-    % \skill{VS Code}{4}
-    % \skill{Eclipse for Java}{4}
-    % \skill{Visual Studio}{4}
-    % \skill{DataGrip}{2}
-    % \skill{HeidiSQL}{3}
-    % \skill{Overleaf}{4}
-    % \textit{\textbf{Editores Multimedia}}\\
+    \vspace{0.5em}
+    \skillsection{\languageSwitch{Software \& Tools}{Software y Herramientas}}
+    \textit{\textbf{IDEs y Editores}}
+
+    \skill{VS Code}{4}
+    \skill{Eclipse for Java}{4}
+    \skill{Visual Studio}{4}
+    \skill{Unity}{3}
+    \skill{DataGrip}{2}
+    \skill{HeidiSQL}{3}
+    % \textit{\textbf{Editores Multimedia}}
+
     % \skill{PhotoShop}{3}
     \skillsection{\languageSwitch{Languages}{Idiomas}}
     \skill{Castellano}{5}
     \skill{Inglés}{4}
     %\skill{Francés}{0}
 
-    \section{\languageSwitch{Certificates}{Certificados}}
-    \begingroup
-    \fontsize{6pt}{8pt}\selectfont
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Coursera ``Introduction to Computer Vision and Image Processing''}
-    \languageSwitch{July}{Julio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Coursera ``Neural Network and Deep Learning''}
-    \languageSwitch{August}{Agosto} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Coursera ``Applied Machine Learning in Python''}
-    \languageSwitch{June}{Junio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Coursera ``Machine Learning Foundations''}
-    \languageSwitch{June}{Junio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Coursera ``Distributed Computing with spark SQL''}
-    \languageSwitch{June}{Junio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Coursera ``Scalable Machine Learning on Big Data using Apache Spark''}
-    \languageSwitch{August}{Agosto} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Pluralight ``Building ETL Pipelines with Azure Databricks''}
-    \languageSwitch{July}{Julio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Pluralight ``Building Machine Learning Models in Spark 2''}
-    \languageSwitch{July}{Julio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Pluralight ``Conceptualizing the Processing Model for Apache Spark Structured Streaming''}
-    \languageSwitch{July}{Julio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Pluralight ``Getting Started with Spark 2''}
-    \languageSwitch{July}{Julio} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Pluralight ``Spark Fundamentals''}
-    \languageSwitch{August}{Agosto} 2024\\
-    \simpleskill{\languageSwitch{Certificate}{Certificado} Cambridge Inglés B1}
-    \languageSwitch{June}{Junio} 2015\\
-    \endgroup
+    \section{\languageSwitch{Skills}{Habilidades}}
+    \simpleskill{\languageSwitch{Teamwork}{Trabajo en equipo}}
+    \simpleskill{\languageSwitch{Team management}{Gestión de equipos}}
+    \simpleskill{\languageSwitch{Leadership}{Liderazgo}}
+    \simpleskill{\languageSwitch{Public speech}{Hablar en público}}
+    \simpleskill{\languageSwitch{Easy troubleshooting}{Fácil resolución de problemas}}
+    \simpleskill{\languageSwitch{Oral and written comunication}{Comunicación oral y escrita}}
+    \simpleskill{\languageSwitch{Responsible}{Responsable}}
+    \simpleskill{\languageSwitch{Adaptability}{Capacidad de adaptación}}
+    \simpleskill{\languageSwitch{Driving licence and own car}{Carnét de Conducir y coche propio}}
 }
+
 \mainbar{
 
 \section[\faGears]{\languageSwitch{Experience}{Experiencia}}
@@ -123,9 +116,10 @@
 \job{\languageSwitch{June}{Junio} 2024 - \languageSwitch{February}{Febrero} 2025}
 {Capgemini Spain}
 {\languageSwitch{Intern}{Becario} {\small\begin{itemize}
-            \item Apache Spark
-            \item pySpark
             \item Tensorflow
+            \item Gradio
+            \item Python
+            \item Microsoft Phi 3
             \item AI \& Data analytics
         \end{itemize}}}
 {}
@@ -133,23 +127,28 @@
 
 \section[\faMortarBoard]{\languageSwitch{Education}{Educación}}
 
-\job{2018 - \languageSwitch{Current}{Actualidad}}
+\job{\languageSwitch{Current}{Actualidad}}
 {Universidad Complutense de Madrid}
-{\languageSwitch{Computer Science Engineering}{Grado en Ingeniería Informática} \\ \languageSwitch{{\small Specifics of Computing Technology}}{{\small Tecnología Específica de Computación}} \\ {\small \textbf{\languageSwitch{Electives}{Optativas}} \begin{itemize}
+{\languageSwitch{Computer Science Engineering}{Grado en Ingeniería Informática} \\
+ \languageSwitch{{\small Specifics of Computing Technology}}{{\small Tecnología Específica de Computación}} \\
+ {\small \textbf{\languageSwitch{Electives}{Optativas}} \begin{itemize}
     \item \languageSwitch{NoSQL Databases}{Bases de datos NoSQL}
     \item \languageSwitch{Evolutive Programming}{Programación Evolutiva}
-\end{itemize}}}
+    \item \languageSwitch{Machine Learning}{Aprendizaje Automático}
+\end{itemize}}} 
+
+{\small \textbf{\languageSwitch{Final Degree Project}{Trabajo de Fin de Grado}}: \languageSwitch{\textit{Motion capture for gesture detection in virtual environments}}{\textit{Captura de movimientos para la detección de gestos en entornos virtuales}} \url{https://github.com/FratosVR/tfg}}
 {}
 
-\section{\languageSwitch{Colaborations}{Colaboraciones}}
+\section[\faUsers]{\languageSwitch{Colaborations}{Colaboraciones}}
 
 \job{2021 - \languageSwitch{Current}{Actualidad}}
 {Universidad Complutense de Madrid}
-{\href{https://www.ucm.es/oficina-de-software-libre/}{OTEA-UCM} \\ {\small
+{\href{https://www.ucm.es/oficina-de-software-libre/}{OTEA-UCM} 
+ {\small
 \begin{itemize}
-    \item \languageSwitch{Git talk 2022}{Charla de Git 2022}
-    \item \languageSwitch{Git talk 2023}{Charla de Git 2023}
-    \item \languageSwitch{Git talk 2024}{Charla de Git 2024}
+    \item \languageSwitch{Git talk 2022/2023/2024}{Charla de Git 2022/2023/2024}
+    \item \languageSwitch{Advanced Github talk 2022}{Charla de Github Avanzado 2025}
     \item \languageSwitch{Help organizing events}{Ayuda en organización de eventos}
 \end{itemize}
 }}
@@ -157,29 +156,106 @@
 
 \job{2023 - \languageSwitch{Current}{Actualidad}}
 {Universidad Complutense de Madrid}
-{Vicedecanato FdI UCM \\ {\small
+{Vicedecanato FdI UCM 
+ {\small
 \begin{itemize}
-    \item \languageSwitch{Advanced Git talk 2023 }{Charla de Git Avanzado 2023} \\ \href{https://informatica.ucm.es/ix-semana-de-la-informatica-2023}{(IX Semana de la Informática)}
-    \item \languageSwitch{Advanced Github talk 2024}{Charla de Github Avanzado 2024} \\ \href{https://informatica.ucm.es/x-semana-de-la-informatica-2024}{(X Semana de la Informática)}
+    \item \languageSwitch{Advanced Git talk 2023 }{Charla de Git Avanzado 2023} \\
+     \href{https://informatica.ucm.es/ix-semana-de-la-informatica-2023}{(IX Semana de la Informática)}
+    \item \languageSwitch{Advanced Github talk 2024}{Charla de Github Avanzado 2024}  \\
+     \href{https://informatica.ucm.es/x-semana-de-la-informatica-2024}{(X Semana de la Informática)}
     \item \languageSwitch{Help organizing events}{Ayuda en organización de eventos}
 \end{itemize}
 }}
 {}
 
+\section[\faFile]{\languageSwitch{Publications}{Publicaciones}}
 
-\section{\languageSwitch{General Skills}{Habilidades Generales}}
-\smallskip % additional skip because tag outlines use up space
-\tag{\languageSwitch{Team work}{Trabajo en equipo}}
-\tag{\languageSwitch{Team management}{Gestión de equipos}}
-\tag{\languageSwitch{Public speech}{Hablar en público}}
-\tag{\languageSwitch{Easy troubleshooting}{Fácil resolución de problemas}}
-\tag{\languageSwitch{Oral and written comunication}{Comunicación oral y escrita}}
-\tag{\languageSwitch{Responsible}{Responsable}}
-\tag{\languageSwitch{Adaptability}{Capacidad de adaptación}}
-\tag{\languageSwitch{Driving licence and own car}{Carnét de Conducir y coche propio}}
+\publication{Motion capture for gesture detection in virtual environments}{A. Barrachina, A. Romero, I. Sagredo, P. Sánchez}{2025}{CEV 2025}{\languageSwitch{Not yet published}{Aún no publicado}}
 
 }
 \makebody
 
+\clearpage
+
+\pagestyle{empty}
+\highlightbar{\hfill}
+\mainbar{\hfill}
+\pubforcefullwidth
+\section{\languageSwitch{Certifications}{Certificaciones}}
+\job{2020}
+{Codecademy}
+{Learn the Command Line Course}
+{\url{https://www.codecademy.com/profiles/A.L.K./certificates/c87ba0541f8be78bc2f4ba1128233f6f}}
+
+\job{2020}
+{Codecademy}
+{Learn Git Course}
+{\url{https://www.codecademy.com/profiles/A.L.K./certificates/a8ab218d5950c29861635cc0bf12fd13}}
+
+\job{2020}
+{Codecademy}
+{Learn the HTML Course}
+{\url{https://www.codecademy.com/profiles/A.L.K./certificates/9eb0741e5ebef1f9f58a53bfac67d3a7}}
+
+\job{2020}
+{Codecademy}
+{Learn the Ruby Course}
+{\url{https://www.codecademy.com/profiles/A.L.K./certificates/1c05e0382bc5681c824c4cbe85c126fd}}
+
+\job{2024}
+{Coursera - University of Michigan}
+{Applied Machine Learning in Python}
+{\url{https://coursera.org/verify/8GA4HRXCUWMX}}
+
+\job{2024}
+{Coursera - IBM}
+{Introduction to Computer Vision and Image Processing}
+{\url{https://coursera.org/verify/U4BLVUU99V5Q}}
+
+\job{2024}
+{Coursera - University of Washington}
+{Machine Learning Foundations: A Case Study Approach}
+{\url{https://coursera.org/verify/6WPSG5QYNTS2}}
+
+\job{2024}
+{Coursera - DeepLearning.AI}
+{Neural Networks and Deep Learning}
+{\url{https://coursera.org/verify/BVIPHUCDW434}}
+
+\job{2024}
+{Coursera - IBM}
+{Scalable Machine Learning on Big Data using Apache Spark}
+{\url{https://coursera.org/verify/KMP88HU83Q73}}
+
+\job{2024}
+{Coursera - UCDavis}
+{Distributed Computing with Spark SQL}
+{\url{https://coursera.org/verify/AYTWY6EJEBUQ}}
+
+\job{2024}
+{Pluralsight}
+{Building Your First ETL Pipeline Using Azure Databricks}
+
+\job{2024}
+{Pluralsight}
+{Building Machine Learning Models in Spark 2}
+
+\job{2024}
+{Pluralsight}
+{Conceptualizing the Processing Model for Apache Spark Structured Streaming}
+
+\job{2024}
+{Pluralsight}
+{Getting Started with Spark 2}
+
+\job{2024}
+{Pluralsight}
+{Apache Spark Fundamentals}
+
+\job{2015}
+{Cambridge English}
+{Councyl of Europe Level B1}
+
+\makebody
 
 \end{document}

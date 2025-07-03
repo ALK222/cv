@@ -8,7 +8,7 @@ OPTIONS=("BW" "COLOR")
 
 for language in "${LANGUAGES[@]}"; do
     for option in "${OPTIONS[@]}"; do
-        xelatex \\def\\"$option"{} \\def\\"$language"{} \\input{cv} --jobname="$language-$option-cv.pdf"
+        xelatex  -interaction=nonstopmode \\def\\"$option"{} \\def\\"$language"{} \\input{cv} --jobname="$language-$option-cv.pdf"
         mv cv.pdf ../cv/"$language-$option-cv.pdf"
     done
 done
